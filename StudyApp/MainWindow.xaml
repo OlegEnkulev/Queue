@@ -1,0 +1,18 @@
+﻿<Window x:Class="StudyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudyApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="447" Width="498" Background="#212121" FontFamily="Century Gothic" FontSize="15" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="50" Background="#424242">
+                <Label x:Name="UserNameLabel" Content="Войдите в аккаунт!" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button Opacity="0" x:Name="AccountBTN" Click="AccountBTN_Click"/>
+            </Grid>
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Height="370" Width="490"/>
+        </StackPanel>
+    </Grid>
+</Window>

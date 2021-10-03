@@ -1,0 +1,25 @@
+﻿<Page x:Class="StudyApp.Pages.TeacherPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StudyApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="370" d:DesignWidth="490"
+      Title="TeacherPage" FontFamily="Century Gothic" FontSize="15">
+
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="5">
+                <Label Content="Колличество людей в очереди:" Width="240" Foreground="White"/>
+                <Label x:Name="CountQueueLabel" Content="0" Width="40" Foreground="White" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="5">
+                <Label Content="Опросите данного человека:" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Foreground="White"/>
+                <Label x:Name="UserQueueLabel" Content="-" Foreground="White" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+            <Button x:Name="StartStopAskBTN" Content="Начать опрос" Margin="5" Width="250" Click="StartStopAskBTN_Click"/>
+            <Button x:Name="ExitBTN" Content="Выйти" Margin="5" Width="250" Click="ExitBTN_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
